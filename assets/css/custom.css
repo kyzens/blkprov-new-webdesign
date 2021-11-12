@@ -4,11 +4,95 @@ body {
 
 /* Color Root */
 :root {
-    --primary: #8E05C2;
-    --secondary: #700B97;
-    --dark: #3E065F;
+    --primary: #7014cc;
+    --secondary: #883bd5;
+    --dark: #631db0;
     --black: #000000;
     --white: #fff;
+}
+
+/* My Custom */
+
+/* my-text */
+.my-text-primary {
+    color: var(--primary);
+}
+
+.my-text-secondary {
+    color: var(--secondary);
+}
+
+.my-text-dark {
+    color: var(--dark);
+}
+
+.my-text-black {
+    color: var(--black);
+}
+
+.my-text-white {
+    color: var(--white);
+}
+
+
+/* my-btn */
+.my-btn-link {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.my-btn-link:hover {
+    text-decoration: underline;
+    color: var(--primary);
+}
+
+.my-btn-slider-primary {
+    color: var(--white);
+    background: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.my-btn-slider-primary:hover {
+    color: var(--white);
+    background: var(--dark);
+    border: 1px solid var(--dark);
+}
+
+.my-btn-primary {
+    color: var(--white);
+    background: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.my-btn-primary:hover {
+    color: var(--white);
+    background: var(--dark);
+    border: 1px solid var(--dark);
+}
+
+.my-btn-outline-primary {
+    color: var(--black);
+    border: 1px solid var(--primary);
+}
+
+.my-btn-outline-primary:hover {
+    color: var(--white);
+    background: var(--primary);
+}
+
+.my-btn-outline-secondary {
+    color: var(--black);
+    border: 1px solid var(--secondary);
+}
+
+.my-btn-outline-secondary:hover {
+    color: var(--white);
+    background: var(--secondary);
+}
+
+/* my-border */
+.my-border-bottom-primary {
+    border: 1px solid var(--primary);
 }
 
 /* Custom Bootstrap */
@@ -20,57 +104,102 @@ body {
     object-fit: cover;
     object-position: center;
     width: 100%;
-    height: 40vh;
+    height: 600px;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
 }
 
 .carousel-caption {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    left: 110px;
+    bottom: 150px;
+    width: 600px;
     height: 20vh;
-    padding: 1.2rem;
     text-align: left;
-    background: rgba(0, 0, 0, 0.5);
-    /* border-radius: 0 24px 24px 0; */
 }
 
 .carousel-caption h3 {
-    font-size: 1rem;
+    font-size: 3rem;
 }
 
 .carousel-caption p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: lighter;
-}
-
-.carousel-caption a {
-    background: var(--primary);
-    text-decoration: none;
-    color: var(--white);
-    border-radius: 6px;
-    font-size: 0.6rem;
-}
-
-.carousel-caption a:hover {
-    background: var(--secondary);
-    color: var(--white);
-}
-
-.carousel-indicators {
-    /* justify-content: flex-start; */
-    top: 10px;
-    right: auto;
-    margin: 0;
-    padding: 0 1.2rem;
-    /* display: table-cell;
-    vertical-align: middle;
-    float: none; */
 }
 
 .carousel-indicators button {
     width: 10px !important;
     height: 10px !important;
+}
+
+@media (max-width: 1200px) {
+    .carousel-caption {
+        left: 75px;
+        bottom: 180px;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-caption {
+        left: 155px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 2.5rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        text-align: center;
+        left: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .carousel-caption h3 {
+        display: inline-block;
+        width: 50%;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .my-btn-slider-primary {
+        font-size: 0.8rem;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        bottom: 50px;
+        padding: 0 10px;
+    }
+
+    .carousel-caption h3 {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+        font-weight: lighter;
+    }
 }
 
 @media (min-width: 992px){
