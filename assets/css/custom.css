@@ -140,6 +140,25 @@ body {
     height: 10px !important;
 }
 
+.card .figure {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.card .figure img {
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.card:hover .figure img {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.card:hover .card-title {
+    color: var(--primary);
+}
+
 @media (max-width: 1200px) {
     .carousel-caption {
         left: 75px;
