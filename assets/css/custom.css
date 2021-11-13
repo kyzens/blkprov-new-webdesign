@@ -151,8 +151,8 @@ body {
 }
 
 .card:hover .figure img {
-    -webkit-transform: scale(1.1);
-	transform: scale(1.1);
+    -webkit-transform: scale(1.15);
+	transform: scale(1.15);
 }
 
 .card:hover .card-title {
