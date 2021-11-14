@@ -34,6 +34,10 @@ body {
     color: var(--white);
 }
 
+/* my-bg */
+.my-bg-primary {
+    background: var(--primary);
+}
 
 /* my-btn */
 .my-btn-link {
@@ -93,6 +97,15 @@ body {
 /* my-border */
 .my-border-bottom-primary {
     border: 1px solid var(--primary);
+}
+
+/* my-dropdown */
+.dropup .my-dropdown-navb {
+    top: auto;
+    right: 11px;
+    bottom: 100%;
+    width: 100% !important;
+    margin-bottom: .125rem;
 }
 
 /* Custom Bootstrap */

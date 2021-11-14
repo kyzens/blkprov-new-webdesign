@@ -18,7 +18,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Navbar Tablet & Laptop -->
+    <nav class="navbar navbar-expand-lg navbar-light d-none d-md-block">
         <div class="container">
             <a class="navbar-brand d-none d-md-block" href="#">
                 <div class="d-flex align-items-center">
@@ -37,7 +38,7 @@
                 <small><span class="navbar-toggler-icon"></span></small>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 300px;">
+                <ul class="navbar-nav gap-lg-3 ms-auto my-2 navbar-nav-scroll" style="--bs-scroll-height: 300px;">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
@@ -68,6 +69,54 @@
                 </ul>
             </div>
         </div>
+    </nav>
+
+    <!-- Navbar Mobile -->
+    <div class="container">
+        <div class="row d-md-none d-lg-none d-xl-none">
+            <a class="py-3 text-decoration-none" href="#">
+                <div class="d-flex align-items-center jus">
+                    <img src="assets/images/logo-pemprov.png" alt="" height="30">
+                    <span class="fs-6 small fw-bolder ms-2 text-dark">BLK PROV. GORONTALO</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-dark my-bg-primary py-2 navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom">
+        <ul class="navbar-nav nav-justified w-100">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-home"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-newspaper"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-images"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-bullhorn"></i>
+                </a>
+            </li>
+            <li class="nav-item dropup">
+                <a href="#" class="nav-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarScrollingDropup" role="button">
+                    <i class="fas fa-building"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end my-dropdown-navb mb-2 rounded-top rounded-0" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item small" href="profile.html">Profile</a></li>
+                    <li><a class="dropdown-item small" href="visimisi.html">Visi & Misi</a></li>
+                    <li><a class="dropdown-item small" href="sambutan.html">Sambutan Kepala</a></li>
+                    <li><a class="dropdown-item small" href="struktur.html">Struktur Organisasi</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 
     <section id="slider" class="mb-5">
@@ -138,26 +187,32 @@
                         <div class="col-md-12 col-lg-6">
                             <div class="card border-0">
                                 <div class="figure">
-                                    <img class="card-img-top rounded-3 my-img-zoom" src="assets/images/5.jpg" alt="Card image cap">
+                                    <img class="card-img-top rounded-3 my-img-zoom" src="assets/images/5.jpg"
+                                        alt="Card image cap">
                                 </div>
                                 <div class="card-body pb-0 px-0">
-                                  <h4 class="card-title my-card-title">Time to Get Your House Clean and in Order</h4>
-                                  <p class="mb-2 fw-bold small">Administrator <span class="fw-light text-muted">- 23 Januari 2021</span></p>
-                                  <p class="card-text fw-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn my-btn-outline-primary"><small>Baca Selengkapnya</small></a>
+                                    <h4 class="card-title my-card-title">Time to Get Your House Clean and in Order</h4>
+                                    <p class="mb-2 fw-bold small">Administrator <span class="fw-light text-muted">- 23
+                                            Januari 2021</span></p>
+                                    <p class="card-text fw-light">Some quick example text to build on the card title and
+                                        make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn my-btn-outline-primary"><small>Baca Selengkapnya</small></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-6">
                             <div class="card border-0">
                                 <div class="figure">
-                                    <img class="card-img-top rounded-3 my-img-zoom" src="assets/images/2.jpg" alt="Card image cap">
+                                    <img class="card-img-top rounded-3 my-img-zoom" src="assets/images/2.jpg"
+                                        alt="Card image cap">
                                 </div>
                                 <div class="card-body pb-0 px-0">
-                                  <h4 class="card-title my-card-title">Time to Get Your House Clean and in Order</h4>
-                                  <p class="mb-2 fw-bold small">Administrator <span class="fw-light text-muted">- 23 Januari 2021</span></p>
-                                  <p class="card-text fw-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn my-btn-outline-primary"><small>Baca Selengkapnya</small></a>
+                                    <h4 class="card-title my-card-title">Time to Get Your House Clean and in Order</h4>
+                                    <p class="mb-2 fw-bold small">Administrator <span class="fw-light text-muted">- 23
+                                            Januari 2021</span></p>
+                                    <p class="card-text fw-light">Some quick example text to build on the card title and
+                                        make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn my-btn-outline-primary"><small>Baca Selengkapnya</small></a>
                                 </div>
                             </div>
                         </div>
@@ -175,30 +230,36 @@
                         <div class="col-md-12">
                             <div class="card border-0">
                                 <div class="card-body p-0">
-                                  <h5 class="card-title">Time to Get Your House Clean and in Order</h5>
-                                  <p class="small mb-2 fw-bold"><small>Administrator <span class="text-muted fw-light">- 23 Januari 2021</span></small></p>
-                                  <p class="card-text fw-light small mb-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-sm my-btn-primary"><small>Baca Selengkapnya</small></a>
+                                    <h5 class="card-title">Time to Get Your House Clean and in Order</h5>
+                                    <p class="small mb-2 fw-bold"><small>Administrator <span
+                                                class="text-muted fw-light">- 23 Januari 2021</span></small></p>
+                                    <p class="card-text fw-light small mb-2">Some quick example text to build on the
+                                        card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-sm my-btn-primary"><small>Baca Selengkapnya</small></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="card border-0">
                                 <div class="card-body p-0">
-                                  <h5 class="card-title">Time to Get Your House Clean and in Order</h5>
-                                  <p class="small mb-2 fw-bold"><small>Administrator <span class="text-muted fw-light">- 23 Januari 2021</span></small></p>
-                                  <p class="card-text fw-light small mb-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-sm my-btn-primary"><small>Baca Selengkapnya</small></a>
+                                    <h5 class="card-title">Time to Get Your House Clean and in Order</h5>
+                                    <p class="small mb-2 fw-bold"><small>Administrator <span
+                                                class="text-muted fw-light">- 23 Januari 2021</span></small></p>
+                                    <p class="card-text fw-light small mb-2">Some quick example text to build on the
+                                        card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-sm my-btn-primary"><small>Baca Selengkapnya</small></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="card border-0">
                                 <div class="card-body p-0">
-                                  <h5 class="card-title">Time to Get Your House Clean and in Order</h5>
-                                  <p class="small mb-2 fw-bold"><small>Administrator <span class="text-muted fw-light">- 23 Januari 2021</span></small></p>
-                                  <p class="card-text fw-light small mb-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-sm my-btn-primary"><small>Baca Selengkapnya</small></a>
+                                    <h5 class="card-title">Time to Get Your House Clean and in Order</h5>
+                                    <p class="small mb-2 fw-bold"><small>Administrator <span
+                                                class="text-muted fw-light">- 23 Januari 2021</span></small></p>
+                                    <p class="card-text fw-light small mb-2">Some quick example text to build on the
+                                        card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-sm my-btn-primary"><small>Baca Selengkapnya</small></a>
                                 </div>
                             </div>
                         </div>
@@ -223,48 +284,60 @@
                         <div class="col-md-12 col-lg-6 col-xl-3">
                             <div class="card border-0">
                                 <div class="figure">
-                                    <img class="card-img-top rounded-3 my-img-zoom" src="assets/images/2.jpg" alt="Card image cap">
+                                    <img class="card-img-top rounded-3 my-img-zoom" src="assets/images/2.jpg"
+                                        alt="Card image cap">
                                 </div>
                                 <div class="card-body px-0">
-                                  <h4 class="card-title my-card-title">Time to Get Your House Clean and in Order</h4>
-                                  <p class="mb-2 fw-bold small">Administrator <span class="fw-light text-muted">- 23 Januari 2021</span></p>
-                                  <a href="#" class="btn my-btn-outline-primary"><small>Lihat Galeri</small></a>
+                                    <h5 class="card-title my-card-title">Time to Get Your House Clean and in Order</h4>
+                                        <p class="mb-2 fw-bold small">Administrator <span class="fw-light text-muted">-
+                                                23 Januari 2021</span></p>
+                                        <a href="#" class="btn btn-sm my-btn-outline-primary"><small>Lihat
+                                                Galeri</small></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-6 col-xl-3">
                             <div class="card border-0">
                                 <div class="figure">
-                                    <img class="card-img-top rounded-3 my-img-zoom" src="assets/images/3.jpg" alt="Card image cap">
+                                    <img class="card-img-top rounded-3 my-img-zoom" src="assets/images/3.jpg"
+                                        alt="Card image cap">
                                 </div>
                                 <div class="card-body px-0">
-                                  <h4 class="card-title my-card-title">Time to Get Your House Clean and in Order</h4>
-                                  <p class="mb-2 fw-bold small">Administrator <span class="fw-light text-muted">- 23 Januari 2021</span></p>
-                                  <a href="#" class="btn my-btn-outline-primary"><small>Lihat Galeri</small></a>
+                                    <h5 class="card-title my-card-title">Time to Get Your House Clean and in Order</h5>
+                                    <p class="mb-2 fw-bold small">Administrator <span class="fw-light text-muted">- 23
+                                            Januari 2021</span></p>
+                                    <a href="#" class="btn btn-sm my-btn-outline-primary"><small>Lihat
+                                            Galeri</small></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-6 col-xl-3">
                             <div class="card border-0">
                                 <div class="figure">
-                                    <img class="card-img-top rounded-3 my-img-zoom" src="assets/images/5.jpg" alt="Card image cap">
+                                    <img class="card-img-top rounded-3 my-img-zoom" src="assets/images/5.jpg"
+                                        alt="Card image cap">
                                 </div>
                                 <div class="card-body px-0">
-                                  <h4 class="card-title my-card-title">Time to Get Your House Clean and in Order</h4>
-                                  <p class="mb-2 fw-bold small">Administrator <span class="fw-light text-muted">- 23 Januari 2021</span></p>
-                                  <a href="#" class="btn my-btn-outline-primary"><small>Lihat Galeri</small></a>
+                                    <h5 class="card-title my-card-title">Time to Get Your House Clean and in Order</h5>
+                                    <p class="mb-2 fw-bold small">Administrator <span class="fw-light text-muted">- 23
+                                            Januari 2021</span></p>
+                                    <a href="#" class="btn btn-sm my-btn-outline-primary"><small>Lihat
+                                            Galeri</small></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-6 col-xl-3">
                             <div class="card border-0">
                                 <div class="figure">
-                                    <img class="card-img-top rounded-3 my-img-zoom" src="assets/images/2.jpg" alt="Card image cap">
+                                    <img class="card-img-top rounded-3 my-img-zoom" src="assets/images/2.jpg"
+                                        alt="Card image cap">
                                 </div>
                                 <div class="card-body px-0">
-                                  <h4 class="card-title my-card-title">Time to Get Your House Clean and in Order</h4>
-                                  <p class="mb-2 fw-bold small">Administrator <span class="fw-light text-muted">- 23 Januari 2021</span></p>
-                                  <a href="#" class="btn my-btn-outline-primary"><small>Lihat Galeri</small></a>
+                                    <h5 class="card-title my-card-title">Time to Get Your House Clean and in Order</h5>
+                                    <p class="mb-2 fw-bold small">Administrator <span class="fw-light text-muted">- 23
+                                            Januari 2021</span></p>
+                                    <a href="#" class="btn btn-sm my-btn-outline-primary"><small>Lihat
+                                            Galeri</small></a>
                                 </div>
                             </div>
                         </div>
@@ -276,6 +349,8 @@
 
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
