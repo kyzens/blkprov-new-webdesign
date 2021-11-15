@@ -246,6 +246,124 @@ body {
     color: var(--primary);
 }
 
+/* Custom Template Footer */
+.footer-wrap {
+    padding-top: 43px;
+    background-size: cover;
+}
+
+.footer-wrap h3 {
+    font-size: 17px;
+}
+
+.footer-wrap p {
+    font-size: 13px;
+    line-height: 24px;
+    color: #b3b3b3;
+    margin-top: 15px;
+}
+
+.footer-wrap p a {
+    color: #fff;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.footer-links li a {
+    font-size: 13px;
+    line-height: 30px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-category li a {
+    font-size: 13px;
+    line-height: 30px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.address {
+    
+    color: #b3b3b3;
+    font-size: 14px;
+    position: relative;
+    padding-left: 30px;
+    line-height: 30px;
+}
+
+.info a {
+ 
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.info a {
+
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+}
+.copyright {
+    font-size: 0.8rem;
+    color: #ccc;
+    text-align: center;
+    background: var(--dark);
+}
+
+footer .second_class{
+    padding-bottom: 25px;
+}
+footer .first_class {
+    padding-bottom: 21px;
+    border-bottom: 1px solid #444;
+}
+footer .first_class p, footer .first_class h3{
+    margin: 0 0;
+    
+}
+footer{
+    background: var(--dark);
+}
+
+footer .second_class_bdr{
+    padding-top: 25px;
+    border-top:1px solid #222;
+}
+
+footer .btn-facebook a {
+    padding: 6px 14px !important;
+}
+
+footer .btn-envelop a {
+    color: #D6403A;
+    font-size: 15px;
+    padding: 12px 12px;
+}
+
+footer .round-btn a {
+    padding: 6px 12px;
+}
+
+footer .round-btn {
+    box-shadow: 2px 2px 5px 0px #222 !important;
+}
+
+footer .round-btn {
+    margin: 15px 4px;
+}
+  
+footer dl, ol, ul {
+    padding-left: 5px;
+}
+
+footer li{
+    list-style: none;
+}
+
 @media (max-width: 1200px) {
     .carousel-caption {
         left: 75px;
@@ -281,6 +399,14 @@ body {
         width: 50%;
         font-size: 2rem;
     }
+
+    .footer-wrap h3 {
+        margin-top: 27px;
+    }
+        
+    footer .round-btn {
+        margin: 15px 4px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -305,6 +431,9 @@ body {
     .carousel-caption p {
         font-size: 0.8rem;
         font-weight: lighter;
+    }
+    .footer-wrap {
+        padding-top: 20px;
     }
 }
 
