@@ -34,9 +34,30 @@ body {
     color: var(--white);
 }
 
+.my-text-content-card {
+    position: relative;
+    z-index: 1;
+}
+
 /* my-bg */
 .my-bg-primary {
     background: var(--primary);
+}
+
+.my-bg-secondary {
+    background: var(--secondary);
+}
+
+.my-bg-dark {
+    background: var(--dark);
+}
+
+.my-bg-black {
+    background: var(--black);
+}
+
+.my-bg-white {
+    background: var(--white);
 }
 
 /* my-btn */
@@ -99,6 +120,11 @@ body {
     border: 1px solid var(--primary);
 }
 
+/* my-rounded */
+.my-rounded {
+    border-radius: 8px;
+}
+
 /* my-dropdown */
 .dropup .my-dropdown-navb {
     top: auto;
@@ -107,6 +133,54 @@ body {
     width: 100% !important;
     margin-bottom: .125rem;
 }
+
+/* my-img */
+.my-img-content-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.my-img-content-card .my-img-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.15;
+    -webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+    filter: sepia(100%);
+    transform: scale(1.2);
+}
+
+.my-link-card:hover .my-img-card {
+    opacity: 0.5;
+    transform: scale(1);
+}
+
+/* my-icon */
+.my-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.my-icon-card {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+/* my-footer */
+.my-footer {
+    height: 10vh;
+    background: var(--primary);
+}
+
+/* End My Custom */
 
 /* Custom Bootstrap */
 #slider {
