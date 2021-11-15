@@ -120,6 +120,10 @@ body {
     border: 1px solid var(--primary);
 }
 
+.my-border-top-primary {
+    border-top: 3px solid var(--primary);
+}
+
 /* my-rounded */
 .my-rounded {
     border-radius: 8px;
